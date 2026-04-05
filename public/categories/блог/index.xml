@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Блог on Сайт by resurssss</title>
-    <link>http://localhost:1313/categories/%D0%B1%D0%BB%D0%BE%D0%B3/</link>
+    <link>http://localhost:1313/web_porfolio/categories/%D0%B1%D0%BB%D0%BE%D0%B3/</link>
     <description>Recent content in Блог on Сайт by resurssss</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ru</language>
     <copyright>© 2026 </copyright>
-    <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%D0%B1%D0%BB%D0%BE%D0%B3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/web_porfolio/categories/%D0%B1%D0%BB%D0%BE%D0%B3/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Разработка сервера - что важно учесть</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:1313/web_porfolio/posts/my-first-post/</link>
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/web_porfolio/posts/my-first-post/</guid>
       <description>&lt;p&gt;Когда только начинаешь учить backend, кажется, что WEB API — это просто набор функций, которые возвращают JSON.&#xA;«Написал ручку — молодец. Написал пять ручек — красавчик».&lt;/p&gt;&#xA;&lt;p&gt;Но на 2 курсе ИТМО, когда мы начали делать полноценный проект, я поняла: хороший API — это не про количество эндпоинтов. Это про архитектуру и безопасность.&lt;/p&gt;&#xA;&lt;p&gt;Вот 3 вещи, которые теперь всегда держу в голове:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Документация — это лицо твоего API 📄&#xA;Если ты сделал крутой сервис, но никто не знает, как к нему обратиться — его не существует.&#xA;В нашем проекте мы используем OpenAPI (Swagger). Это больно настраивать с первого раза, но потом экономит часы переписок в Telegram. Спецификация должна быть всегда актуальной.&lt;/p&gt;</description>
       
     </item>

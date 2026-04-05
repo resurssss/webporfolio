@@ -3,10 +3,11 @@ title: "Добро пожаловать!"
 description: "Мой личный сайт"
 ---
 
-Это мой сайт, где я делюсь своими мыслями и проектами.
+На этом сайте я буду делиться своими мыслями и проектами
 
+{{< portfolio_list folder="portfolio" title="Мои проекты" limit=1 >}}
 
-{{< list title="Мой блог" limit=5 >}}
+{{< list_by_folder folder="posts" title="Блог" limit=3 >}}
 
 ## Обо мне
 

@@ -1,0 +1,14 @@
+{{ $pages := where .Site.RegularPages "Section" "posts" }}
+{{ range first 5 $pages }}
+  <article class="post-entry">
+    <header class="entry-header">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    </header>
+    <div class="entry-content">
+      <p>{{ .Summary | plainify | truncate 150 }}</p>
+    </div>
+    <footer class="entry-footer">
+      <time datetime="{{ .Date }}">{{ .Date.Format "02.01.2006" }}</time> · {{ .WordCount }} слов
+    </footer>
+  </article>
+{{ end }}

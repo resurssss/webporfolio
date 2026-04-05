@@ -1,0 +1,30 @@
+{{- $folder := .Get "folder" -}}
+{{- $title := .Get "title" -}}
+{{- $limit := .Get "limit" | default 5 -}}
+
+{{- $pages := where .Site.RegularPages "Section" $folder -}}
+{{- $pages = first $limit $pages -}}
+
+{{- if $pages -}}
+  {{- with $title }}<h2 class="text-2xl font-extrabold text-white mb-0" style="margin-bottom: 0;">{{ . }}</h2>{{ end -}}
+  <div class="flex flex-col gap-0 text-left" style="margin-top: -0.25rem;">
+    {{- range $pages -}}
+      <article class="text-left" style="margin-top: 0; margin-bottom: 0;">
+        <div class="flex-1">
+          <h3 class="text-xl font-semibold text-left" style="margin-bottom: 0;">
+            <a href="{{ .RelPermalink }}" class="text-white hover:underline hover:decoration-blue-400">{{ .Title }}</a>
+          </h3>
+          <div class="text-sm text-gray-700 text-left" style="margin-top: 0; line-height: 1.4;">
+            <time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time>
+            <span class="mx-1">·</span>
+            <span>{{ .WordCount }} слов</span>
+            <span class="mx-1">·</span>
+            <span>{{ .ReadingTime }} минут</span>
+          </div>
+        </div>
+      </article>
+    {{- end -}}
+  </div>
+{{- else -}}
+  <p class="text-gray-400 text-left">Нет материалов в папке "{{ $folder }}".</p>
+{{- end -}}

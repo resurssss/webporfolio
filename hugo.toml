@@ -1,7 +1,28 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
+baseURL = 'https://resurssss.github.io/web_porfolio/'
+languageCode = 'ru'
 title = 'Сайт by resurssss'
 theme = 'blowfish'
 
 [params]
   description = 'Это мой личный сайт'
+
+[menu]
+[[menu.main]]
+  name = "Главная"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Блог"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "Проекты"
+  url = "/portfolio/"
+  weight = 3
+
+[[menu.main]]
+  name = "О себе"
+  url = "/about/"
+  weight = 4

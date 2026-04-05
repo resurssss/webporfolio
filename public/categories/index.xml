@@ -2,19 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Сайт by resurssss</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>http://localhost:1313/web_porfolio/categories/</link>
     <description>Recent content in Categories on Сайт by resurssss</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ru</language>
     <copyright>© 2026 </copyright>
-    <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/web_porfolio/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Портфолио</title>
+      <link>http://localhost:1313/web_porfolio/categories/%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE/</link>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/web_porfolio/categories/%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Блог</title>
-      <link>http://localhost:1313/categories/%D0%B1%D0%BB%D0%BE%D0%B3/</link>
+      <link>http://localhost:1313/web_porfolio/categories/%D0%B1%D0%BB%D0%BE%D0%B3/</link>
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/%D0%B1%D0%BB%D0%BE%D0%B3/</guid>
+      <guid>http://localhost:1313/web_porfolio/categories/%D0%B1%D0%BB%D0%BE%D0%B3/</guid>
       <description></description>
       
     </item>
