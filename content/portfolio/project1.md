@@ -136,10 +136,11 @@ C:\Users\Serg>curl -X POST http://httpbin.org/post -H "Content-Type: application
 
 Установка временного промежутка через параметры date_req1, date_req2: 20.10.2006 - 20.10.2007. Установка валюты через параметр VAL_NM_RQ: R01239 (Евро)
 
-![](/web_porfolio/images/1.png)
+![](https://resurssss.github.io/webporfolio/images/1.png)
+
 ##### Ответ сервера:
 
-![](/web_porfolio/images/2.png)
+![](https://resurssss.github.io/webporfolio/images/2.png)
 ....
-![](/web_porfolio/images/3.png)
+![](https://resurssss.github.io/webporfolio/images/3.png)
 Таким образом, мы получили сведения о том, как менялся курс евро за период 20.10.2006 - 20.10.2007.
