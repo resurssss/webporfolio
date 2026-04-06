@@ -5,9 +5,11 @@ description: "Мой личный сайт"
 
 На этом сайте я буду делиться своими мыслями и проектами
 
-{{< portfolio_list folder="portfolio" title="Мои проекты" limit=1 >}}
+## Мои проекты
+{{< portfolio_list folder="portfolio" limit=1 >}}
 
-{{< list_by_folder folder="posts" title="Блог" limit=3 >}}
+## Блог
+{{< list_by_folder folder="posts" limit=3 >}}
 
 ## Обо мне
 
