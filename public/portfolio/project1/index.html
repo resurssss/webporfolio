@@ -220,7 +220,7 @@
     "keywords": ["http","api"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "328"
+    "wordCount": "276"
   }]
   </script>
 
@@ -603,7 +603,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-04-05T00:00:00&#43;00:00">April 5, 2026</time><span class="px-2 text-primary-500">&middot;</span><span>328 слов</span><span class="px-2 text-primary-500">&middot;</span><span title="Время чтения">2 минут</span>
+      <time datetime="2026-04-05T00:00:00&#43;00:00">April 5, 2026</time><span class="px-2 text-primary-500">&middot;</span><span>276 слов</span><span class="px-2 text-primary-500">&middot;</span><span title="Время чтения">2 минут</span>
     
 
     
@@ -813,18 +813,8 @@
     </span>
     
 </h4>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>C:\Users\Serg&gt;curl http://httpbin.org/get
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>  &#34;args&#34;: {},
-</span></span><span style="display:flex;"><span>  &#34;headers&#34;: {
-</span></span><span style="display:flex;"><span>    &#34;Accept&#34;: &#34;*/*&#34;,
-</span></span><span style="display:flex;"><span>    &#34;Host&#34;: &#34;httpbin.org&#34;,
-</span></span><span style="display:flex;"><span>    &#34;User-Agent&#34;: &#34;curl/8.13.0&#34;,
-</span></span><span style="display:flex;"><span>    &#34;X-Amzn-Trace-Id&#34;: &#34;Root=1-69d2a35d-780f491a33e5df3f44877b36&#34;
-</span></span><span style="display:flex;"><span>  },
-</span></span><span style="display:flex;"><span>  &#34;origin&#34;: &#34;92.62.58.177&#34;,
-</span></span><span style="display:flex;"><span>  &#34;url&#34;: &#34;http://httpbin.org/get&#34;
-</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></div>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>C:\Users\Serg&gt;curl -X GET https://random-d.uk/api/v2/random
+</span></span><span style="display:flex;"><span>{&#34;message&#34;:&#34;Powered by random-d.uk&#34;,&#34;url&#34;:&#34;http://random-d.uk/api/349.jpg&#34;}</span></span></code></pre></div></div>
 
 <h4 class="relative group">Post-запрос
     <div id="post-запрос-1" class="anchor"></div>
@@ -835,25 +825,11 @@
     </span>
     
 </h4>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>C:\Users\Serg&gt;curl -X POST http://httpbin.org/post -H &#34;Content-Type: application/json&#34; -d &#34;{\&#34;fact\&#34;:\&#34;Cats sleep 70% of lives\&#34;}&#34;
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>C:\Users\Serg&gt;curl -X POST https://jsonplaceholder.typicode.com/posts -H &#34;Content-Type: application/json&#34; -d &#34;{\&#34;name\&#34;:\&#34;Mark\&#34;,\&#34;job\&#34;:\&#34;developer\&#34;}&#34;
 </span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>  &#34;args&#34;: {},
-</span></span><span style="display:flex;"><span>  &#34;data&#34;: &#34;{\&#34;fact\&#34;:\&#34;Cats sleep 70% of lives\&#34;}&#34;,
-</span></span><span style="display:flex;"><span>  &#34;files&#34;: {},
-</span></span><span style="display:flex;"><span>  &#34;form&#34;: {},
-</span></span><span style="display:flex;"><span>  &#34;headers&#34;: {
-</span></span><span style="display:flex;"><span>    &#34;Accept&#34;: &#34;*/*&#34;,
-</span></span><span style="display:flex;"><span>    &#34;Content-Length&#34;: &#34;34&#34;,
-</span></span><span style="display:flex;"><span>    &#34;Content-Type&#34;: &#34;application/json&#34;,
-</span></span><span style="display:flex;"><span>    &#34;Host&#34;: &#34;httpbin.org&#34;,
-</span></span><span style="display:flex;"><span>    &#34;User-Agent&#34;: &#34;curl/8.13.0&#34;,
-</span></span><span style="display:flex;"><span>    &#34;X-Amzn-Trace-Id&#34;: &#34;Root=1-69d2a38a-181e36cb0a7de6a12f9ec117&#34;
-</span></span><span style="display:flex;"><span>  },
-</span></span><span style="display:flex;"><span>  &#34;json&#34;: {
-</span></span><span style="display:flex;"><span>    &#34;fact&#34;: &#34;Cats sleep 70% of lives&#34;
-</span></span><span style="display:flex;"><span>  },
-</span></span><span style="display:flex;"><span>  &#34;origin&#34;: &#34;92.62.58.177&#34;,
-</span></span><span style="display:flex;"><span>  &#34;url&#34;: &#34;http://httpbin.org/post&#34;
+</span></span><span style="display:flex;"><span>  &#34;name&#34;: &#34;Mark&#34;,
+</span></span><span style="display:flex;"><span>  &#34;job&#34;: &#34;developer&#34;,
+</span></span><span style="display:flex;"><span>  &#34;id&#34;: 101
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div></div>
 
 <h3 class="relative group">3. Get-запрос для получения курса валют в Postman

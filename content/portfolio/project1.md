@@ -93,41 +93,18 @@ alt-svc: h3=":443"; ma=86400
 
 #### Get-запрос
 ```
-C:\Users\Serg>curl http://httpbin.org/get
-{
-  "args": {},
-  "headers": {
-    "Accept": "*/*",
-    "Host": "httpbin.org",
-    "User-Agent": "curl/8.13.0",
-    "X-Amzn-Trace-Id": "Root=1-69d2a35d-780f491a33e5df3f44877b36"
-  },
-  "origin": "92.62.58.177",
-  "url": "http://httpbin.org/get"
-}
+C:\Users\Serg>curl -X GET https://random-d.uk/api/v2/random
+{"message":"Powered by random-d.uk","url":"http://random-d.uk/api/349.jpg"}
+
 ```
 
 #### Post-запрос
 ```
-C:\Users\Serg>curl -X POST http://httpbin.org/post -H "Content-Type: application/json" -d "{\"fact\":\"Cats sleep 70% of lives\"}"
+C:\Users\Serg>curl -X POST https://jsonplaceholder.typicode.com/posts -H "Content-Type: application/json" -d "{\"name\":\"Mark\",\"job\":\"developer\"}"
 {
-  "args": {},
-  "data": "{\"fact\":\"Cats sleep 70% of lives\"}",
-  "files": {},
-  "form": {},
-  "headers": {
-    "Accept": "*/*",
-    "Content-Length": "34",
-    "Content-Type": "application/json",
-    "Host": "httpbin.org",
-    "User-Agent": "curl/8.13.0",
-    "X-Amzn-Trace-Id": "Root=1-69d2a38a-181e36cb0a7de6a12f9ec117"
-  },
-  "json": {
-    "fact": "Cats sleep 70% of lives"
-  },
-  "origin": "92.62.58.177",
-  "url": "http://httpbin.org/post"
+  "name": "Mark",
+  "job": "developer",
+  "id": 101
 }
 ```
 
