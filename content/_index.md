@@ -6,10 +6,10 @@ description: "Мой личный сайт"
 На этом сайте я буду делиться своими мыслями и проектами
 
 ## Мои проекты
-{{< portfolio_list folder="portfolio" limit=1 >}}
+{{< portfolio_list folder="portfolio" limit=10 >}}
 
 ## Блог
-{{< list_by_folder folder="posts" limit=3 >}}
+{{< list_by_folder folder="posts" limit=10 >}}
 
 ## Обо мне
 
