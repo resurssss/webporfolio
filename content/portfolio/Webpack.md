@@ -300,3 +300,48 @@ setInterval(() => {
 
 Итоговый вид нашего проекта:
 ![](https://resurssss.github.io/webporfolio/images/6.png)
+
+### 8. Docker
+
+Dockerfile:
+```
+FROM node:18-alpine
+
+WORKDIR /app
+
+  
+# Копируем package.json и устанавливаем зависимости
+COPY package*.json ./
+RUN npm install
+
+
+# Копируем остальные файлы
+COPY . .
+
+  
+# Собираем проект
+RUN npx webpack
+
+
+# Устанавливаем serve глобально для запуска
+RUN npm install -g serve
+ 
+
+# Открываем порт 3000
+EXPOSE 3000
+
+  
+# Запускаем сервер
+CMD ["serve", "-s", ".", "-l", "3000"]
+```
+
+Для запуска необходима последовательность команд:
+- `docker build -t webpack-clock .`
+- `docker run -p 3001:3000 webpack-clock` (порт 3000 у меня занят)
+Таким образом, проект отобразится по адресу http://localhost:3001/
+
+Активный контейнер в Docker:
+![](https://resurssss.github.io/webporfolio/images/7.png)
+
+
+
