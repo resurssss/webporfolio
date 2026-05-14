@@ -220,7 +220,7 @@
     "keywords": ["http","api"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "492"
+    "wordCount": "582"
   }]
   </script>
 
@@ -603,7 +603,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-04-24T00:00:00&#43;00:00">April 24, 2026</time><span class="px-2 text-primary-500">&middot;</span><span>492 слов</span><span class="px-2 text-primary-500">&middot;</span><span title="Время чтения">3 минут</span>
+      <time datetime="2026-04-24T00:00:00&#43;00:00">April 24, 2026</time><span class="px-2 text-primary-500">&middot;</span><span>582 слов</span><span class="px-2 text-primary-500">&middot;</span><span title="Время чтения">3 минут</span>
     
 
     
@@ -1031,6 +1031,61 @@
     ></figure>
 </p>
 
+<h3 class="relative group">8. Docker
+    <div id="8-docker" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#8-docker" aria-label="Якорь">#</a>
+    </span>
+    
+</h3>
+<p>Dockerfile:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>FROM node:18-alpine
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>WORKDIR /app
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span># Копируем package.json и устанавливаем зависимости
+</span></span><span style="display:flex;"><span>COPY package*.json ./
+</span></span><span style="display:flex;"><span>RUN npm install
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># Копируем остальные файлы
+</span></span><span style="display:flex;"><span>COPY . .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span># Собираем проект
+</span></span><span style="display:flex;"><span>RUN npx webpack
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># Устанавливаем serve глобально для запуска
+</span></span><span style="display:flex;"><span>RUN npm install -g serve
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># Открываем порт 3000
+</span></span><span style="display:flex;"><span>EXPOSE 3000
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span># Запускаем сервер
+</span></span><span style="display:flex;"><span>CMD [&#34;serve&#34;, &#34;-s&#34;, &#34;.&#34;, &#34;-l&#34;, &#34;3000&#34;]</span></span></code></pre></div></div>
+<p>Для запуска необходима последовательность команд:</p>
+<ul>
+<li><code>docker build -t webpack-clock .</code></li>
+<li><code>docker run -p 3001:3000 webpack-clock</code> (порт 3000 у меня занят)
+Таким образом, проект отобразится по адресу http://localhost:3001/</li>
+</ul>
+<p>Активный контейнер в Docker:
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="https://resurssss.github.io/webporfolio/images/7.png"
+    ></figure>
+</p>
+
           
           
           
@@ -1072,6 +1127,19 @@
           
         </span>
         <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/web_porfolio/portfolio/webpack--bootstrap/">
+              <span class="leading-6">
+                Webpack & Bootstrap&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2026-05-14T00:00:00&#43;00:00">May 14, 2026</time>
+              </span>
+            
           
         </span>
       </div>
