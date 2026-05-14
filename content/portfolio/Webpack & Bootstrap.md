@@ -110,5 +110,5 @@ categories: ["портфолио"]
 
 Сборка проекта осуществляется командой `npx webpack`
 Результат сборки:
-![](https://resurssss.github.io/webporfolio/images/8.png)
-![](https://resurssss.github.io/webporfolio/images/9.png)
+![](https://resurssss.github.io/webporfolio/images/8.PNG)
+![](https://resurssss.github.io/webporfolio/images/9.PNG)
