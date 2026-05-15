@@ -7,7 +7,6 @@
 **Сайт доступен по ссылке:**  
 [https://resurssss.github.io/web_porfolio/](https://resurssss.github.io/web_porfolio/)
 
----
 
 ## Технологии
 
@@ -15,7 +14,6 @@
 - GitHub Pages — хостинг
 - GitHub Actions — автоматический деплой
 
----
 
 ## 📁 Структура проекта
 ```text
