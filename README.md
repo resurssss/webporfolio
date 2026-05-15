@@ -8,6 +8,7 @@
 [https://resurssss.github.io/web_porfolio/](https://resurssss.github.io/web_porfolio/)
 
 
+
 ## Технологии
 
 - [Hugo](https://gohugo.io/) — статический генератор
@@ -15,7 +16,8 @@
 - GitHub Actions — автоматический деплой
 
 
-## 📁 Структура проекта
+
+## Структура проекта
 ```text
 content/
 ├── portfolio/          # Лабораторные работы / проекты
